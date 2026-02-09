@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Boilerplate for polaris chip">
+  <base href="/">
+
+
+  <style>
+    :root,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+    polaris-chip {
+      margin: 16px;
+    }
+  </style>
+  <title>polaris-chip / my-card</title>
+</head>
+
+
+<body>
+  <h1>polaris-chip</h1>
+  <!-- this is going to do whatever the tag's defaults are -->
+  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+  <polaris-chip title="Faculty and Staff"></polaris-chip>
+  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
+  <polaris-chip title="Grants and donations"></polaris-chip>
+
+
+  <h1>my-card</h1>
+  
+    <my-card
+      title="Rainbow"
+      description="This card shows a beautiful rainbow."
+      image="https://wallpapercave.com/wp/jQ9N7Fp.jpg"
+    ></my-card>
+
+     <my-card
+      title="Background Card"
+      description="This card changes the background and text color."
+      image="https://wallpapercave.com/wp/jQ9N7Fp.jpg"
+      style="
+        --card-bg: #1f2933;
+        --card-text: #f5f5f5;
+      "
+    ></my-card>
+
+    <my-card
+      title="Round Card"
+      description="This card has a larger border."
+      image="https://wallpapercave.com/wp/jQ9N7Fp.jpg"
+      style="
+        --card-radius: 24px;
+        --card-width: 320px;
+      "
+    ></my-card>
+
+    <my-card
+      title="Border Color Card"
+      description="This card uses a custom border color."
+      image="https://wallpapercave.com/wp/jQ9N7Fp.jpg"
+      style="
+        --card-border: #ff6600;
+      "
+    ></my-card>
+
+
+    <my-card
+      title="Skinnier Card"
+      description="This is a smaller, compact version of the card."
+      image="https://wallpapercave.com/wp/jQ9N7Fp.jpg"
+      style="
+        --card-width: 200px;
+      "
+    ></my-card>
+
+
+
+
+  <!-- this is what is bringing in the definition for this tag -->
+  <script type="module" src="./src/polaris-chip.js"></script>
+  <script type="module" src="./src/my-card.js"></script>
+
+</body>
+
+
+</html>
+
+
